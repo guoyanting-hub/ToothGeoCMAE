@@ -1,0 +1,21 @@
+python3 train_pretrain.py test \
+	--dataroot ./data/ \
+	--batch_size 16 --n_classes 50 \
+	--augment_scale --augment_deformation --n_epoch 300 \
+	--name "Pretest" \
+	--weight_decay 0.05 \
+	--mask_ratio 0.5 \
+	--channels 13 --patch_size 64 \
+	--lr 1e-4 \
+	--weight 0.5 \
+	--depth 12 \
+	--n_dropout 2 \
+	--heads 12 \
+	--lr_milestones "none" --optim "adamw" \
+	--encoder_depth 12 \
+	--decoder_depth 6 \
+	--decoder_dim 512 \
+	--decoder_num_heads 16 \
+	--checkpoint "/root/autodl-fs/MeshMAE-mesh/checkpoints/Pretest/loss-21.0609-251.0000.pkl" \
+	--num_warmup_steps "2" \
+	--dim 384 

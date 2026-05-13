@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0 python3 train_pretrain_IOSSeg.py \
+  --dataroot ./IOSSeg_obj \
+  --name Pretrain_IOSSeg_KMeans_b24_1.1e-4_m0.75 \
+  --n_epoch 100 \
+  --seed 42 \
+  --batch_size 24 \
+  --lr 1.1e-4 \
+  --weight_decay 0.05 \
+  --num_warmup_steps 2 \
+  --mask_ratio 0.75 \
+  --channels 13 \
+  --patch_size 64 \
+  --encoder_depth 12 \
+  --decoder_depth 6 \
+  --decoder_dim 512 \
+  --decoder_num_heads 16 \
+  --dim 384 \
+  --heads 12 \
+  --augment_scale \
+  --augment_orient \
+  --augment_deformation

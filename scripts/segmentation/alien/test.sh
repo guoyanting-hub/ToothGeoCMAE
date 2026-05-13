@@ -1,0 +1,12 @@
+python3 train_seg.py test \
+  --dataroot ../dataset/Data_gen_256/test/01ADU \
+  --test_dataroot ../dataset/Data_gen_256/test/01ADU \
+	--weight_decay 0.05 --optim adamw \
+	--lr 1e-4 --n_epoch 1 --gamma 0.1 \
+	--batch_size 1 --heads 6 --patch_size 64 \
+	--dim 384 --encoder_depth 12 \
+	--decoder_depth 6 --decoder_dim 512 --decoder_num_heads 16 \
+	--channel 13 --augment_scale \
+	--name "alien_test" --face_pos --lw1 1 --lw2 1 \
+	--dataset_name alien --seg_parts 50 \
+  --checkpoint /root/autodl-fs/MeshMAE-mesh/checkpoints/alien/CrossAttn_0.94_0.91.pkl

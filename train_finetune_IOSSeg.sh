@@ -1,0 +1,26 @@
+CUDA_VISIBLE_DEVICES=0 python3 train_finetune_IOSSeg.py \
+  --finetune_dataroot ./IOSSeg_obj/train \
+  --test_dataroot ./IOSSeg_obj/test \
+  --finetune_list ./IOSSeg_obj/finetune_12.txt \
+  --name "Finetune_IOSSeg_KMeans_b8_1.1e-4_m0.75_10%" \
+  --checkpoint ./checkpoints_IOSSeg/2026-03-25_03-07-05_Pretrain_IOSSeg_KMeans_b24_1.1e-4_m0.75/loss-0.0332-49.0000.pkl \
+  --seed 42 \
+  --batch_size 8 \
+  --lr 1.1e-4 \
+  --n_epoch 301 \
+  --patch_size 64 \
+  --augment_scale  \
+  --augment_orient \
+  --channels 13 \
+  --gamma 0.1 \
+  --weight_decay 0.05 \
+  --optim adamw \
+  --dim 384 \
+  --heads 6 \
+  --encoder_depth 12 \
+  --decoder_depth 6 \
+  --decoder_dim 512 \
+  --decoder_num_heads 16 \
+  --face_pos \
+  --n_worker 8 \
+  --drop_path 0.4 
