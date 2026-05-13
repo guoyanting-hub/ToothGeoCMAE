@@ -1,0 +1,26 @@
+CUDA_VISIBLE_DEVICES=0 python3 train_finetune_16k_1800_KMeans.py \
+  --finetune_dataroot ./data/train \
+  --test_dataroot ./data/test \
+  --name "Finetune" \
+  --checkpoint  \
+  --seed 42 \
+  --batch_size 21 \
+  --lr 1.1e-4 \
+  --n_epoch 301 \
+  --mask_ratio 0.5 \
+  --patch_size 64 \
+  --augment_scale  \
+  --augment_orient \
+  --channels 13 \
+  --gamma 0.1 \
+  --weight_decay 0.05 \
+  --optim adamw \
+  --dim 384 \
+  --heads 6 \
+  --encoder_depth 12 \
+  --decoder_depth 6 \
+  --decoder_dim 512 \
+  --decoder_num_heads 16 \
+  --face_pos \
+  --n_worker 8 \
+  --drop_path 0.4 

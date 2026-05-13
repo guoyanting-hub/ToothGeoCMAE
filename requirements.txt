@@ -1,0 +1,12 @@
+numpy
+tensorboard
+tensorboardx
+tensorboardX
+torch
+pygem
+timm
+scipy
+csv
+trimesh
+scikit-learn
+einops
