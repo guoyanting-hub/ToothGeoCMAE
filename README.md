@@ -1,11 +1,11 @@
 **Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation**
 
 
-Install dependencies:
+**Install dependencies:**
 
 pip install -r requirements
 
-Compile Chamfer Distance:
+**Compile Chamfer Distance:**
 
 cd chamfer_dist
 
