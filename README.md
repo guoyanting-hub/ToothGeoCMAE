@@ -20,13 +20,11 @@ Teeth3DS (MICCAI 3DTeethSeg’22 Challenge): Contains 1,800 intraoral scans (1,2
 3D-IOSSeg: Contains 180 high-resolution scans (120 training / 60 testing). https://www.jianguoyun.com/p/DdSdVsIQivvHDBi03b8FIAA
 
 **2. Self-Supervised Pre-training:** 
-
 Train the encoder on unlabeled dental meshes to learn general geometric features
 
 bash pretrain.sh
 
 **3. Supervised Fine-tuning:** 
-
 Fine-tune the pre-trained encoder on a limited set of labeled data (e.g., 10%, 30%, or 100%)
 
 bash finetune.sh
