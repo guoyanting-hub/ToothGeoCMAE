@@ -23,7 +23,7 @@ Train the encoder on unlabeled dental meshes to learn general geometric features
 bash pretrain.sh
 Note: This script calls train_pretrain_16k_1800_KMeans.py. You can modify hyperparameters like mask_ratio (default: 0.5) inside the script.
 
-3. Supervised Fine-tuning (Stage 2)
+4. Supervised Fine-tuning (Stage 2)
 Fine-tune the pre-trained encoder on a limited set of labeled data (e.g., 10%, 30%, or 100%):
 bash finetune.sh
 Note: This script calls train_finetune_16k_1800_KMeans.py using the checkpoints generated from Stage 1.
