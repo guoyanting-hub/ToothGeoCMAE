@@ -1,5 +1,7 @@
 # Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20274923.svg)](https://doi.org/10.5281/zenodo.20274923)
+
 ToothGeoCMAE is a self-supervised framework designed to learn discriminative geometric representations from unlabeled 3D dental meshes. By integrating Masked Autoencoding (MAE) with Multi-view Contrastive Learning, the model achieves state-of-the-art performance in 3D tooth segmentation using only 30% of labeled data.
 
 <img src="images/Overall.png" width="700"/>
