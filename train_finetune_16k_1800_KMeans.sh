@@ -1,10 +1,10 @@
-CUDA_VISIBLE_DEVICES=0 python3 train_finetune_16k_1800_KMeans.py \
+python3 train_finetune_16k_1800_KMeans.py \
   --finetune_dataroot ./data/train \
   --test_dataroot ./data/test \
-  --name "Finetune" \
-  --checkpoint  \
+  --name Finetune \
+  --checkpoint ./path_to_pretrain_ckpts \
   --seed 42 \
-  --batch_size 21 \
+  --batch_size 8 \
   --lr 1.1e-4 \
   --n_epoch 301 \
   --mask_ratio 0.5 \
