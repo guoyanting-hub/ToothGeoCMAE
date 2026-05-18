@@ -16,5 +16,6 @@ python3 train_pretrain_16k_1800_KMeans.py \
   --decoder_num_heads 16 \
   --dim 384 \
   --heads 12 \
+  --augment_scale \
   --augment_orient \
   --augment_deformation
