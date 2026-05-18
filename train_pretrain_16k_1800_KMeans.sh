@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python3 train_pretrain_16k_1800_KMeans.py \
+python3 train_pretrain_16k_1800_KMeans.py \
   --dataroot ./data \
   --name Pretrain \
   --n_epoch 100 \
@@ -16,6 +16,5 @@ CUDA_VISIBLE_DEVICES=0 python3 train_pretrain_16k_1800_KMeans.py \
   --decoder_num_heads 16 \
   --dim 384 \
   --heads 12 \
-  --augment_scale \
   --augment_orient \
   --augment_deformation
