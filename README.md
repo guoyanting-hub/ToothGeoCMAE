@@ -40,7 +40,7 @@ data
 ```
 Each .txt file defines the training subset indices for low-label fine-tuning experiments (10%, 30%, 100%).<br>
 The Teeth3DS dataset (MICCAI 3DTeethSeg’22 Challenge) can be downloaded from https://osf.io/xctdy/. The 3D-IOSSeg dataset can be downloaded from https://reurl.cc/0vjLXY. For more information about the data, check out the link https://github.com/abenhamadou/3DTeethSeg_MICCAI_Challenges and https://github.com/MIVRC/Fast-TGCN.<br>
-We provide sample files (example.obj and example.json) in the data directories.
+We provide sample files in the data directories.
 
 ### Pre-training
 To train the encoder on unlabeled dental meshes to learn general geometric features, run the following command:
@@ -62,7 +62,7 @@ bash finetune.sh
 The detailed experimental settings, including dataset split selection (10%, 30%, 100%), optimizer configuration, and training hyperparameters, are defined in the shell script.
 
 ### Citation
-please cite our upcoming paper once it is officially published:<br>
-Paper Title: Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation<br>
-Target Journal: The Visual Computer<br>
+If you find our work useful in your research, please cite our upcoming paper once it is officially published.<br>
+Paper Title: Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation <br>
+Target Journal: The Visual Computer <br>
 Once the paper is formally accepted and published, we will update the complete standard BibTeX citation information in a timely manner.
