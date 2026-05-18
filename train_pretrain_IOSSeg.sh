@@ -1,6 +1,6 @@
-CUDA_VISIBLE_DEVICES=0 python3 train_pretrain_IOSSeg.py \
-  --dataroot ./IOSSeg_obj \
-  --name Pretrain_IOSSeg_KMeans_b24_1.1e-4_m0.75 \
+python3 train_pretrain_IOSSeg.py \
+  --dataroot ./data \
+  --name Pretrain \
   --n_epoch 100 \
   --seed 42 \
   --batch_size 24 \
