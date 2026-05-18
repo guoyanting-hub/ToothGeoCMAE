@@ -1,9 +1,9 @@
-CUDA_VISIBLE_DEVICES=0 python3 train_finetune_IOSSeg.py \
-  --finetune_dataroot ./IOSSeg_obj/train \
-  --test_dataroot ./IOSSeg_obj/test \
-  --finetune_list ./IOSSeg_obj/finetune_12.txt \
-  --name "Finetune_IOSSeg_KMeans_b8_1.1e-4_m0.75_10%" \
-  --checkpoint ./checkpoints_IOSSeg/2026-03-25_03-07-05_Pretrain_IOSSeg_KMeans_b24_1.1e-4_m0.75/loss-0.0332-49.0000.pkl \
+python3 train_finetune_IOSSeg.py \
+  --finetune_dataroot ./data/train \
+  --test_dataroot ./data/test \
+  --finetune_list ./data/finetune_12.txt \
+  --name Finetune \
+  --checkpoint ./path_to_pretrain_ckpts \
   --seed 42 \
   --batch_size 8 \
   --lr 1.1e-4 \
