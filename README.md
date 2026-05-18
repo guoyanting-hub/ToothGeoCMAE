@@ -12,7 +12,7 @@ ToothGeoCMAE is a self-supervised framework designed to learn discriminative geo
 - Python 3.8
 - PyTorch 2.1.0 + CUDA 12.1
 - CUDA Toolkit 12.2
-- see requirements.txt for additional dependencies
+
 To install the required dependencies, run the following command:
 ```bash
 pip install -r requirements.txt
@@ -46,6 +46,9 @@ We provide sample files in the data directories.
 To train the encoder on unlabeled dental meshes to learn general geometric features, run the following command:
 ```bash
 bash scripts/train_pretrain_Teeth3ds.sh
+```
+or <br>
+```bash
 bash scripts/train_pretrain_IOSSeg.sh
 ```
 The training configuration (including learning rate, batch size, masking ratio, and network architecture settings) is fully specified in the shell script for reproducibility.
@@ -55,6 +58,9 @@ The training configuration (including learning rate, batch size, masking ratio, 
 Fine-tune the pre-trained encoder using different proportions of labeled training data (e.g., 10%, 30%, and 100%), as defined in the corresponding data split .txt files, and evaluate the performance on the test set. Please run the following command:
 ```bash
 bash scripts/train_finetune_Teeth3ds.sh
+```
+or <br>
+```bash
 bash scripts/train_finetune_IOSSeg.sh
 ```
 The detailed experimental settings, including dataset split selection (10%, 30%, 100%), optimizer configuration, and training hyperparameters, are defined in the shell script.
