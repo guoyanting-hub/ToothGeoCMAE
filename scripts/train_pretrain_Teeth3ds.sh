@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=0 python3 train_pretrain_16k_1800_KMeans.py \
+  --dataroot ./data \
+  --name Pretrain \
+  --n_epoch 100 \
+  --seed 42 \
+  --batch_size 24 \
+  --lr 1.1e-4 \
+  --weight_decay 0.05 \
+  --num_warmup_steps 2 \
+  --mask_ratio 0.5 \
+  --channels 13 \
+  --patch_size 64 \
+  --encoder_depth 12 \
+  --decoder_depth 6 \
+  --decoder_dim 512 \
+  --decoder_num_heads 16 \
+  --dim 384 \
+  --heads 12 \
+  --augment_orient \
+  --augment_deformation
