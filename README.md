@@ -74,7 +74,5 @@ If you find our work useful in your research, please cite our upcoming paper onc
   title={Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation},
   author={Chen Wang, Yanting Guo, Yanzhao Ren, Haisheng Li, Guibin Huang, Peng Yu, Ruijun Liu},
   journal={The Visual Computer},
-  year={2026},
-  publisher={Springer},
-  doi={Provide your DOI here}
+  year={2026}
 }
