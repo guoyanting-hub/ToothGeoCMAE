@@ -68,7 +68,13 @@ bash scripts/train_finetune_IOSSeg.sh
 The detailed experimental settings, including dataset split selection (10%, 30%, 100%), optimizer configuration, and training hyperparameters, are defined in the shell script.
 
 ### Citation
-If you find our work useful in your research, please cite our upcoming paper once it is officially published.<br>
-Paper Title: Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation <br>
-Target Journal: The Visual Computer <br>
-Once the paper is formally accepted and published, we will update the complete standard BibTeX citation information in a timely manner.
+If you find our work useful in your research, please cite our upcoming paper once it is officially published. Once the paper is formally accepted and published, we will update the complete standard BibTeX citation information in a timely manner.<br>
+```
+@article{wang2026ToothGeoCMAE,
+  title={Geometry-Guided Multi-View Contrastive Masked Autoencoder for Low-Supervision 3D Tooth Segmentation},
+  author={Chen Wang, Yanting Guo, Yanzhao Ren, Haisheng Li, Guibin Huang, Peng Yu, Ruijun Liu},
+  journal={The Visual Computer},
+  year={2026},
+  publisher={Springer},
+  doi={Provide your DOI here}
+}
